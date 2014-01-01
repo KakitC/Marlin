@@ -47,7 +47,7 @@
 // 301 = Rambo
 
 #ifndef MOTHERBOARD
-#define MOTHERBOARD 131 //33
+#define MOTHERBOARD 33 //33
 #endif
 
 //// The following define selects which power supply you have. Please choose the one that matches your setup
@@ -103,9 +103,9 @@
 #define MORGAN_SCARA  
 
 // Length of inner support arm
-#define Linkage_1 150000 //um      Preprocessor cannot handle decimal point...
+#define Linkage_1 158750 //um      Preprocessor cannot handle decimal point...
 // Length of outer support arm     Measure arm lengths precicely, and enter 
-#define Linkage_2 150000 //um      define in micrometer
+#define Linkage_2 158750 //um      define in micrometer
 
 // SCARA tower offset (position of Tower relative to bed zero position) This do not need to be accurate
 // Homing offset calibration takes care of real homing position offset.
@@ -147,10 +147,10 @@
 // 52 is 200k thermistor - ATC Semitec 204GT-2 (1k pullup)
 // 55 is 100k thermistor - ATC Semitec 104GT-2 (Used in ParCan) (1k pullup)
 
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 7
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
-#define TEMP_SENSOR_BED 1
+#define TEMP_SENSOR_BED 7
 
 // Actual temperature must be close to target for this long before M109 returns success
 #define TEMP_RESIDENCY_TIME 10	// (seconds)
@@ -168,10 +168,10 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 275
-#define HEATER_1_MAXTEMP 275
-#define HEATER_2_MAXTEMP 275
-#define BED_MAXTEMP 150
+#define HEATER_0_MAXTEMP 250
+#define HEATER_1_MAXTEMP 250
+#define HEATER_2_MAXTEMP 250
+#define BED_MAXTEMP 100
 
 // If your bed has low resistance e.g. .6 ohm and throws the fuse you can duty cycle it to reduce the
 // average current. The value should be an integer and the heat bed will be turned on for 1 interval of
